@@ -16,7 +16,7 @@ def show():
 	if city_name == "select city":
 		Output.config( text = "Please Select city ")
 	else:
-		complete_url = base_url + "appid=" + api_key + "&q=" + city_name
+		complete_url = base_url+"appid="+api_key+"&q="+city_name
 		response =  requests.get(complete_url)
 		x = response.json()
 
